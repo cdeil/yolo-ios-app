@@ -1153,15 +1153,15 @@ public class YOLOSpriteKitIntegration {
     }
     
     private func createJointNode(at point: CGPoint) -> SKShapeNode {
-        let jointNode = SKShapeNode(circleOfRadius: 15.0)  // Made larger
+        let jointNode = SKShapeNode(circleOfRadius: 20.0)  // Made even larger
         jointNode.fillColor = .systemRed  // Made red for visibility
         jointNode.strokeColor = .white
-        jointNode.lineWidth = 3.0
+        jointNode.lineWidth = 4.0
         jointNode.position = point
         
         // Add glow effect
-        let glowNode = SKShapeNode(circleOfRadius: 20.0)  // Made larger
-        glowNode.fillColor = .systemRed.withAlphaComponent(0.5)  // Made more visible
+        let glowNode = SKShapeNode(circleOfRadius: 30.0)  // Made even larger
+        glowNode.fillColor = .systemRed.withAlphaComponent(0.7)  // Made more visible
         glowNode.strokeColor = .clear
         glowNode.position = point
         glowNode.zPosition = -1
@@ -1220,7 +1220,7 @@ public class YOLOSpriteKitIntegration {
         
         let boneNode = SKShapeNode(path: path)
         boneNode.strokeColor = .systemYellow  // Made yellow for visibility
-        boneNode.lineWidth = 8.0  // Made thicker
+        boneNode.lineWidth = 12.0  // Made even thicker
         boneNode.lineCap = .round
         
         return boneNode
